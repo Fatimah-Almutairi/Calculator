@@ -41,7 +41,7 @@ a{
     box-shadow: 0 0 30px #000;
 }
 
-.theme-taggler{
+.theme-toggler {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -49,11 +49,16 @@ a{
     cursor: pointer;
     z-index: 1;
 }
-.theme-togglet.active {
+
+.theme-toggler.active {
     color: #333;
 }
 
-.theme-taggler.active::before{
+.theme-toggler.active::before {
+    background-color: #fff;
+}
+
+.theme-toggler::before {
     content: '';
     height: 30px;
     width: 30px;
@@ -64,6 +69,7 @@ a{
     background-color: #333;
     z-index: -1;
 }
+
 
 #display{
     margin: 0 10px;
@@ -100,6 +106,10 @@ button:hover{
 button#equal{
     height: 255px;
 }
+
+/* button#clear{
+    width: 130px;
+} */
 
 /* light theme */
 
